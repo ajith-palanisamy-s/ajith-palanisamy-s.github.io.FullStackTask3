@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Page with Bootstrap</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    .container{
+         background-color:#A9A9A9;
+      }
+      
+  </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">FRONTEND DEVELOPMENT</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto" id="s1">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Carousel/Slider -->
+
+
+<!-- Card Components -->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img-top" alt="Card 1">
+        <div class="card-body">
+          <h5 class="card-title">HTML</h5>
+          <p class="card-text">HTML stands for Hyper Text Markup Language.
+HTML is the standard markup language for creating Web pages.
+HTML describes the structure of a Web page.
+HTML consists of a series of elements.</p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://media.istockphoto.com/id/1372745247/photo/wooden-blocks-with-css-text-of-concept-a-pen-a-notebook-and-a-hand.jpg?b=1&s=612x612&w=0&k=20&c=yTrPHX28lofzEPj8nJsi-poeF_O7EzxhlVrRLxyacpI=" class="card-img-top" alt="Card 2">
+        <div class="card-body">
+          <h5 class="card-title">CSS</h5>
+          <p class="card-text">CSS stands for Cascading Style Sheets.
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
+External stylesheets are stored in CSS files</p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://media.istockphoto.com/id/1405668892/photo/hand-pressing-bootstrap-button-on-virtual-screen.jpg?b=1&s=612x612&w=0&k=20&c=drxQYkTT_fyhfUWgXKrZCBuRDIsT-cscCRUVwwJ1v2A=" class="card-img-top" alt="Card 3">
+        <div class="card-body">
+          <h5 class="card-title">BOOTSSTRAP</h5>
+          <p class="card-text">Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation,as well  faster and easier web development.</p><br>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Responsive Grid Layout -->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="grid-item">HTML</div>
+    </div>
+    <div class="col-md-4">
+      <div class="grid-item">CSS</div>
+    </div>
+    <div class="col-md-4">
+      <div class="grid-item">BOOTSSTRAP</div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Window -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Contact Us</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button to Trigger Modal -->
+<div class="containe mt-5 text-center">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open Contact Form
+  </button>
+</div>
+
+</body>
+</html>
